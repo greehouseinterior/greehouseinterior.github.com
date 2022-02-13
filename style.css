@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana;
+  margin: 0px;
+}
+
+header {
+  height: 42px;
+}
+
+nav{
+  text-align: right;
+  position: relative;
+  top: -29px;
+}
+
+a {
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.4s;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.mySlides {
+  display:none;
+}
+
+p {
+  margin: 15px;
+}
+
+h1, h2 {
+  margin: 0px 0px 0px 15px;
+  font-weight: lighter;
+}
