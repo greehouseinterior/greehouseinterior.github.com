@@ -7,18 +7,22 @@
   text-transform: uppercase;
   position: relative;
   text-decoration: none;
-  color: rgb(138, 138, 138);
+  color: rgb(108, 117, 125);
   margin: 5px;
+}
+
+.mya2:hover {
+  text-decoration: none;
 }
 
 .currentNav {
   color: rgb(0, 0, 0);
 }
 
-a:after {
+.mya:after {
   content: "";
   position: absolute;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(108, 117, 125);
   height: 2px;
   width: 0;
   left: 0;
@@ -28,15 +32,21 @@ a:after {
 
 .mya:hover {
   text-decoration: none;
-  color: rgb(138, 138, 138);
+  color: rgb(108, 117, 125);
+  transition: 0.4s;
 }
 
 .mya:hover:after {
   width: 100%;
 }
 
+.mainText {
+  margin: 10px;
+}
+
 .left, .right {
-  width: 49%;
+  width: 45%;
+  margin: 10px;
 }
 
 .left {
@@ -45,5 +55,27 @@ a:after {
 
 .right {
   position: relative;
-  right: -51%;
+  right: -52%;
+}
+
+svg {
+  color: rgb(108, 117, 125);
+  transition: 0.5s;
+}
+
+svg:hover {
+  color: rgb(0, 0, 0);
+}
+
+.contact {
+  float: left;
+  text-align: center;
+  margin: 20px;
+  width: 45%;
+}
+
+.mail {
+  float: right;
+  margin: 20px;
+  width: 45%;
 }
