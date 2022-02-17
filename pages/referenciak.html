@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
         <meta charset="UTF-8">
     	<meta name="keywords" content="lakberendezés, látványtervezés, térszabászat, GreenHouse Interior" />
@@ -17,6 +18,7 @@
     <div class="container">        
         <div class="row">
             <div class="col-sm-5">
+                <img class="logo" src="../images/titlePic/gh.jpg" alt="logo">
                 <h1 class="display-5">GreenHouse Interior</h1>
             </div>
             <div class="col-sm-7 myNav">
@@ -28,4 +30,42 @@
             </div>
         </div>
     </div>
+    <div class="galleryDiv">
+        <h2>Eddigi munkáink</h2>
+        <img class="pic" src="../images/slideShow/1.jpg" alt="képleírás1" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/2.jpg" alt="képleírás2" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/3.jpg" alt="képleírás3" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/4.jpg" alt="képleírás4" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/1.jpg" alt="képleírás5" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/2.jpg" alt="képleírás6" onclick="showPic(this)">
+        <img class="pic" src="../images/slideShow/3.jpg" alt="képleírás7" onclick="showPic(this)">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="myClose">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        function showPic(o){
+          modal.style.display = "block";
+          modalImg.src = o.src;
+          captionText.innerHTML = o.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("myClose")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+
 </body>
+</html>
